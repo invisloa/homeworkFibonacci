@@ -7,11 +7,11 @@ using namespace std;
 void MakeFibonacci()
 {
 
-	int firstNumber, secondNumber, thirdNumber, maxSteps, sumAllNumbers;
+	int firstNumber, secondNumber, thirdNumber, maxSteps, total;
 	firstNumber = 0;
 	secondNumber = 1;
 	thirdNumber = firstNumber + secondNumber;
-	sumAllNumbers =0;
+	total =0;
 
 	cout << "Podaj do ilu przejsc ma byc wyswietlany ciag Fibanacciego:" << endl;
 	cin >> maxSteps;
@@ -19,20 +19,20 @@ void MakeFibonacci()
 	if (maxSteps < 1)
 	{
 		cout << fibonacciIntroduce << firstNumber;
-		sumAllNumbers = 0;
+		total = 0;
 	}
 	else if (maxSteps == 1)
 	{
 		cout << fibonacciIntroduce<< firstNumber << ", " << secondNumber;
-		sumAllNumbers = 1;
+		total = 1;
 	}
 	else
 	{
-		sumAllNumbers = 1;
+		total = 1;
 		cout << fibonacciIntroduce << firstNumber << ", " << secondNumber << ", ";
 		for (int i = 1; i < maxSteps; i++)
 		{
-			sumAllNumbers += thirdNumber;
+			total += thirdNumber;
 			cout << thirdNumber << ", ";
 			firstNumber = secondNumber;
 			secondNumber = thirdNumber;
@@ -42,7 +42,7 @@ void MakeFibonacci()
 
 		cout << endl << "Suma wszystkich liczb w ciagu wynosi:" << endl;
 
-		cout << sumAllNumbers<< endl;
+		cout << total<< endl;
 
 	}
 }
