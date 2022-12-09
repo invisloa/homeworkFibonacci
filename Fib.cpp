@@ -48,14 +48,6 @@ int  Fib::takeSum(int upper_limit)
 	return total;
 
 }
-void Fib::clearValues()
-{
-	firstNumber = 0;
-	secondNumber = 1;
-	lastNumber = firstNumber + secondNumber;
-	total = 0;
-}
-
 int  Fib::takeSum()
 {
 	int upper_limit;
@@ -63,7 +55,6 @@ int  Fib::takeSum()
 	cin >> upper_limit;
 	return takeSum(upper_limit);
 }
-
 
 void Fib::advance_by(int bottom_limit)
 {
@@ -104,4 +95,12 @@ void Fib::advance_by()
 	cin >> bottom_limit;
 	advance_by(bottom_limit);
 	
+}
+
+void Fib::clearValues()
+{
+	firstNumber = 0;
+	secondNumber = 1;
+	lastNumber = firstNumber + secondNumber;
+	total = 0;
 }

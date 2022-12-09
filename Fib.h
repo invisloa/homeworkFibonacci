@@ -11,7 +11,7 @@ public:
 	int  takeSum();
 
 
-	int firstNumber = 0, secondNumber = 1, lastNumber = firstNumber + secondNumber, total;
+	int firstNumber = 0, secondNumber = 1, lastNumber = firstNumber + secondNumber, total=0;
 	void operator++(int);
 
 
